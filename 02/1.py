@@ -58,3 +58,7 @@ titanic.hist()
 sns.heatmap(titanic.cvor())
 
 #   IV nacin : srednaj vrednost ne svih nego svih onih kod kojih nema NULL vrednosti
+
+
+
+
