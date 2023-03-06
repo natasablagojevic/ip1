@@ -1,4 +1,17 @@
 # ip1
+---------
+1. *Kvalitativni* <br>
+  1.1 Imenski (=, !=) <br>
+  1.2 Redni (=, !=, <, <=, >, >=) <br>
+ 2. *Kvantitativni* <br>
+  2.1 Intervalni (=, !=, <, <=, >, >=, +, -) <br>
+  2.2 Razmerni (=, !=, <, <=, >, >=, +, -, *, /) <br>
+  
+-------------------------------
+1. *Diskretni*
+2. *Kontinualni*
+
+
 
 ---------
 # Python
