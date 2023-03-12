@@ -41,3 +41,11 @@ dt.**rename(column={staroime: Stari_Naziv, novoime: Novi_Naziv})**  : preimenjuj
 dt.**kolona.fillna(value, inplace=True)** : zamenjuje NaN vrednosti sa value <br><br>
 dt.**count(0)**    : vraca broj datafrejmova, direction = 0 => broj vrednosti u kolonama, 1 => number data in rows <br><br>
 dt.**explode()** <br><br>
+
+-----
+# Crtanje grafika
+
+* Za crtanje vise grafika u jednom redu potrebno je:
+  * **plt.fgure(figsize=(20, 5))**
+  * u for petlji: **plt.subplot(1, 5, i+1)
+
