@@ -47,5 +47,5 @@ dt.**explode()** <br><br>
 
 * Za crtanje vise grafika u jednom redu potrebno je:
   * **plt.fgure(figsize=(20, 5))**
-  * u for petlji: **plt.subplot(1, 5, i+1)
+  * u for petlji: **plt.subplot(1, 5, i+1)**
 
