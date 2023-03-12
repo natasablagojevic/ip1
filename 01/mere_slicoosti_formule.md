@@ -1,3 +1,17 @@
+# Neke osobine:
+1. **Slicnost**:
+  * numericka mera koliko su dva objekta slicna
+  * sto dva objekta vise lice jedan na drugi, slicnost im je veca
+  * cesto se meri na [0, 1]
+  * Koristimo:
+    >Pronalazak gresaka u podacima i grupa koje su jako slicne
+ 2. **Razlicitost (rastojanje)**:
+  * Numericka mera koliko su dva objekta razlicita
+  * Sto dva objekta vise lice jedan na drugi, razlictos im je manja
+  * Najmanja razlicitos je cesto 0, dok gornja granica varira
+  * Koristimo:
+    >Da nadjemo outlajere, izuzetke, granice klastera
+---
 # **Mere slicnosti - FORMULE**
 
 Funkcije slicnosti/razlicitosti za atribute p i q
@@ -17,7 +31,12 @@ Funkcije slicnosti/razlicitosti za atribute p i q
   * slicnost = 0 => rastojanje se koristi kao mera slicnosti
 za dve tacke n-dimenzje <br>
 $$\sum_{k=1}^n q_i $$ <br>
-$$q_i = x_i != y_i ? 1 : 0$$
+
+$$q_i = 
+\begin{cases}
+1, & x_i \neq y_i \\
+0, & inace
+\end{cases}$$
 
 * **Rastojanje Minkovskog:** $L_p$ <br>
 $$(\sum_{i=1}^n abs(x_i - y_i)^p)^{1/p} $$ <br>
