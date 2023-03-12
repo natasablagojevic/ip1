@@ -2,7 +2,7 @@
 - cilj je transformacija atributa da budu na slicnim skalama
 
 * **MinMax scaler** <br>
-  * $$[min, max] -> [0, 1] $$
+  * $$[min, max] \Rightarrow [0, 1] $$
   * koristi se kada:
   >Ako priblizno znamo gornje i donje ogranicenje.  
     + ako ne znamo, ne bismo znali da izvedemo formulu <br><br>
