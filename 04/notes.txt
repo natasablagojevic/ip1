@@ -3,3 +3,33 @@
 * obavezno razdvojiti model na trening i na test
 
 * train_test_split -> stratify -> implementacija: 
+
+		|	T	|	F	|
+	-------------------
+	T	|	TP	|	FN	|
+	-------------------	
+	F	|	FP	|	TN	|
+
+* stopa stvarno pozitivnih - bitno je da bude lepo kalsifikovano za prvi red
+
+* preciznost : koliko je prikupljenih podataka relevantni ()
+
+* odziv : da ne bude prevelik
+
+* razlika izmedju preciznosti i odziva traba da bude minimalna, tj. da tezi nuli
+
+* ne smemo da imamo ekstremnu nisku i ekstremnu visoku vrednost
+
+* F1 score
+	- harmonijska sredina preciznosti i odziva
+	- da koristimo kod nasih modela!!
+	
+* drveta odlucivanja
+	- negativna : 
+		-- ne daje dovoljno dobra preciznost koju mogu da daju drugi modeli
+		
+* asambli modeli:
+	- vise slabih modela moze da ima prediktivnu moc nego jedan
+	- slucajne sume
+	- uprosecavanje svih modela
+	

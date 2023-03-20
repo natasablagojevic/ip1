@@ -12,7 +12,7 @@ import pandas as pd
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import confusion_matrix, precision_score, recall_score, classification_report
 from matplotlib import pyplot as plt
 
 iris = load_iris()
@@ -55,7 +55,7 @@ target_names
 # u svakom modelu da imamo stratifikovanu podelu
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.33, random_state=12, stratify=y)
 
-model = DecisionTreeClassifier()
+model = DecisionTreeClassifier(max_depth=2, class_weight={0:1, 1:50, 2:1})
 model.fit(x_train, y_train)
 
 # klase koje je model predvideo
@@ -72,4 +72,11 @@ accuracy_score(y_test, y_pred_test)
 confusion_matrix(y_test, y_pred_test)
 
 plt.figure(figsize=(10, 10))
-_ = plot_tree(model)
+_ = plot_tree(model, feature_names=feature_names, class_names=target_names, filled=True)
+
+print(classification_report(y_test, y_pred_test))
+
+# domaci da model dovedemo do tacnosti do reko 92%
+
+# ovabezno ovg tipa odraditi za projekat jer daju dovoljno dobre rezultate
+from sklearn.esanble import RandomForestClasifer
