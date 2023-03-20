@@ -1,0 +1,5 @@
+* series je jednodimenzioni, a dataframe je visedimenzioni niz
+
+* obavezno razdvojiti model na trening i na test
+
+* train_test_split -> stratify -> implementacija: 
