@@ -79,4 +79,4 @@ print(classification_report(y_test, y_pred_test))
 # domaci da model dovedemo do tacnosti do reko 92%
 
 # ovabezno ovg tipa odraditi za projekat jer daju dovoljno dobre rezultate
-from sklearn.esanble import RandomForestClasifer
+from sklearn.ensemble import RandomForestClassifier
